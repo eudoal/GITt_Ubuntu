@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Curriculum Vitae de Bruce Wayne</title>
+    <style type="text/css">
+        /* tamaño de los tag artcicle */
+
+        article {
+            width: 350px;
+            height: 550px;
+            display: block;
+            margin-right: 50px;
+            border: solid 10px black;
+            float: left;
+        }
+
+        /* colores de los diferentes elementos */
+
+        article#b ul,
+        article#c ul {
+            color: blue;
+        }
+
+        article#b strong,
+        article#c strong {
+            color: black;
+        }
+
+        article#a {
+            background-color: blue;
+        }
+
+        article#b {
+            background-color: yellow;
+        }
+
+        article#c {
+            background-color: gray;
+        }
+
+        /* posición relativa de las imágenes */
+
+        article#a img {
+            position: relative;
+            top: 70px;
+        }
+
+        article#b img {
+            position: relative;
+            top: 80px;
+        }
+
+        /* Efectos de transformación para cada imagen */
+
+        article#a img:hover {
+
+            transition: all 3s ease;
+            transform: scale(2, 3);
+        }
+
+        article#b img:hover {
+
+            transition: all 3s ease;
+            transform: scale(2.2) rotate(-1440deg);
+        }
+
+        article#c img:hover {
+            transition: all 3s ease;
+            transform: rotateY(720deg);
+            transform-style: preserve-3d;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <h1>Curriculum Vitae de Bruce Wayne</h1>
+
+    <section>
+        <article id="a">
+            <h2>Datos personales</h2>
+            <ul>
+                <li>Nombre completo: <strong>Bruce Wayne</strong></li>
+                <li>Fecha de nacimiento: <strong>1/5/1939</strong></li>
+                <li>Lugar de nacimiento: <strong>Gotham City</strong></li>
+            </ul>
+            <div>
+                <img width="100%" height="100%" src="img/batman.png">
+            </div>
+
+        </article>
+
+        <article id="b">
+            <h2>Formación académica</h2>
+            <ul>
+                <li>1956-1961: <strong>Universidad del Espantapájaros</strong></li>
+                <li>1952-1956: <strong>Instituto de Dos Caras</strong></li>
+                <li>1944-1952: <strong>Escuela Primaria del Joker</strong></li>
+            </ul>
+            <div>
+                <img width="100%" height="100%" src="img/LogoBatman.png">
+            </div>
+
+        </article>
+
+        <article id="c">
+            <h2>Experiencia laboral</h2>
+            <ul>
+                <li>1975-1985: <strong>En el paro</strong></li>
+                <li>1965-1975: <strong>Cazavillanos y demás chusma</strong></li>
+                <li>1962-1965: <strong>Aprendiz de superhéroe</strong></li>
+            </ul>
+            <div>
+                <img width="100%" height="100%" src="img/batman_busto.png">
+            </div>
+        </article>
+    </section>
+
+</body>
+
+</html>
